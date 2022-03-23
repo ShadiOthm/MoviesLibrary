@@ -1,0 +1,18 @@
+﻿@model COMP235MVCDemo.Models.Movie
+@{
+    ViewBag.Title = "Movie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+Id: @Model.Id
+<br />
+Title: @Model.Title
+<br />
+Director: @Model.Director
+<br />
+Description: @Model.Description
+<br />
+@Html.ActionLink("Edit", "DetailsUpdate", new { Id = Model.Id })
+@Html.ActionLink("Delete", "DetailsDelete", new { Id = Model.Id })
+
+<h2>Movie</h2>
+
